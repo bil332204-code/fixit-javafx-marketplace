@@ -1,0 +1,361 @@
+/* ===== FixIt Application Theme — Orange & Dark ===== */
+
+.root {
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+    -fx-font-size: 14px;
+    -fx-base: #1B1B2F;
+    -fx-background: #1B1B2F;
+}
+
+/* ===== Background Panels ===== */
+.dark-bg {
+    -fx-background-color: linear-gradient(to bottom right, #1B1B2F, #162447);
+}
+
+.sidebar {
+    -fx-background-color: #12122A;
+    -fx-padding: 0;
+}
+
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8888AA;
+    -fx-font-size: 15px;
+    -fx-padding: 14 24;
+    -fx-alignment: CENTER-LEFT;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+    -fx-max-width: 999999;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: rgba(255, 107, 53, 0.12);
+    -fx-text-fill: #FF6B35;
+}
+
+.sidebar-btn-active {
+    -fx-background-color: rgba(255, 107, 53, 0.18);
+    -fx-text-fill: #FF6B35;
+    -fx-font-weight: bold;
+}
+
+/* ===== Cards ===== */
+.card {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 16;
+    -fx-padding: 28;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 16, 0, 0, 6);
+}
+
+.card:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.09);
+}
+
+.stat-card {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 14;
+    -fx-padding: 22 26;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 4);
+}
+
+.worker-card {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 14;
+    -fx-padding: 18 22;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 8, 0, 0, 3);
+}
+
+.worker-card:hover {
+    -fx-background-color: rgba(255, 107, 53, 0.08);
+    -fx-effect: dropshadow(gaussian, rgba(255, 107, 53, 0.15), 12, 0, 0, 4);
+}
+
+.role-card {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 20;
+    -fx-padding: 40 50;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 14, 0, 0, 6);
+}
+
+.role-card:hover {
+    -fx-background-color: rgba(255, 107, 53, 0.12);
+    -fx-effect: dropshadow(gaussian, rgba(255, 107, 53, 0.25), 20, 0, 0, 6);
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #FF6B35, #F57C00);
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 32;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(255, 107, 53, 0.3), 8, 0, 0, 3);
+}
+
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #F57C00, #E65100);
+    -fx-effect: dropshadow(gaussian, rgba(255, 107, 53, 0.5), 14, 0.2, 0, 3);
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #E65100;
+    -fx-effect: dropshadow(gaussian, rgba(255, 107, 53, 0.2), 4, 0, 0, 2);
+}
+
+.btn-secondary {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-text-fill: #CCCCDD;
+    -fx-font-size: 14px;
+    -fx-padding: 10 24;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-radius: 10;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.14);
+    -fx-text-fill: white;
+}
+
+.btn-danger {
+    -fx-background-color: rgba(244, 67, 54, 0.15);
+    -fx-text-fill: #F44336;
+    -fx-font-size: 14px;
+    -fx-padding: 10 24;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.btn-danger:hover {
+    -fx-background-color: rgba(244, 67, 54, 0.25);
+}
+
+.btn-success {
+    -fx-background-color: linear-gradient(to right, #43A047, #2E7D32);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 24;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.btn-success:hover {
+    -fx-background-color: linear-gradient(to right, #2E7D32, #1B5E20);
+}
+
+/* ===== Text Fields ===== */
+.text-field, .password-field {
+    -fx-background-color: rgba(255, 255, 255, 0.07);
+    -fx-text-fill: #EEEEFF;
+    -fx-prompt-text-fill: #666688;
+    -fx-padding: 12 16;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 10;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #FF6B35;
+    -fx-background-color: rgba(255, 107, 53, 0.06);
+    -fx-effect: dropshadow(gaussian, rgba(255, 107, 53, 0.15), 8, 0, 0, 0);
+}
+
+.text-area {
+    -fx-background-color: rgba(255, 255, 255, 0.07);
+    -fx-text-fill: #EEEEFF;
+    -fx-prompt-text-fill: #666688;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 10;
+}
+
+.text-area:focused {
+    -fx-border-color: #FF6B35;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+}
+
+/* ===== ComboBox ===== */
+.combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0.07);
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 6 10;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #CCCCDD;
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #222244;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: #CCCCDD;
+    -fx-background-color: #222244;
+    -fx-padding: 8 14;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: rgba(255, 107, 53, 0.15);
+    -fx-text-fill: #FF6B35;
+}
+
+/* ===== DatePicker ===== */
+.date-picker {
+    -fx-background-color: rgba(255, 255, 255, 0.07);
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.date-picker .text-field {
+    -fx-border-color: transparent;
+}
+
+/* ===== Labels ===== */
+.title-text {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+}
+
+.subtitle-text {
+    -fx-text-fill: #8888AA;
+    -fx-font-size: 16px;
+}
+
+.heading-text {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.body-text {
+    -fx-text-fill: #CCCCDD;
+    -fx-font-size: 14px;
+}
+
+.accent-text {
+    -fx-text-fill: #FF6B35;
+    -fx-font-weight: bold;
+}
+
+.error-text {
+    -fx-text-fill: #F44336;
+    -fx-font-size: 12px;
+}
+
+.success-text {
+    -fx-text-fill: #4CAF50;
+    -fx-font-size: 13px;
+}
+
+.stat-value {
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.stat-label {
+    -fx-text-fill: #8888AA;
+    -fx-font-size: 13px;
+}
+
+.star-rating {
+    -fx-text-fill: #FFC107;
+    -fx-font-size: 18px;
+}
+
+.skill-badge {
+    -fx-background-color: rgba(255, 107, 53, 0.15);
+    -fx-text-fill: #FF6B35;
+    -fx-padding: 4 12;
+    -fx-background-radius: 20;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.availability-online {
+    -fx-text-fill: #4CAF50;
+    -fx-font-weight: bold;
+}
+
+.availability-busy {
+    -fx-text-fill: #FFC107;
+    -fx-font-weight: bold;
+}
+
+.availability-offline {
+    -fx-text-fill: #F44336;
+    -fx-font-weight: bold;
+}
+
+/* ===== ScrollPane ===== */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+/* ===== Separator ===== */
+.separator .line {
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Alert Dialog ===== */
+.dialog-pane {
+    -fx-background-color: #222244;
+}
+
+.dialog-pane .content {
+    -fx-text-fill: #CCCCDD;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #1B1B2F;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
